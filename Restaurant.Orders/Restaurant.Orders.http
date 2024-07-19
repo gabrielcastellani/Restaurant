@@ -1,0 +1,17 @@
+@Restaurant.Orders_HostAddress = http://localhost:5200
+
+###
+
+GET {{Restaurant.Orders_HostAddress}}/api/orders
+
+###
+
+POST {{Restaurant.Orders_HostAddress}}/api/orders
+Content-Type: application/json
+
+{
+  "customerID": null,
+  "products": ["string"]
+}
+
+###
